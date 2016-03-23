@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+	<title>Textblaster</title>
+</head>
+<body>
+	DONE!! <br>	
+	<a href='{{url_for('index')}}'>HOME</a> <br>
+	--- <br>
+	{% for line in song%}
+		{{line|e}}<br>
+	{% endfor %}
+</body>	
+</html>

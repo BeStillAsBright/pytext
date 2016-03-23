@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<title>Textblaster</title>
+	<link href={{url_for('static',filename='index.css')}} rel=stylesheet>
+</head>
+<body>
+<form action='/text' method='post'>
+	<div>
+		<label for='num'>Phone Number (format: 5556667777):</label>
+		<input type='text' id='num' name='num'>
+	</div>
+	<div>
+		<label for='address'>"Email" Address (textitem@texttheme.txt):</label>
+		<input type='text' id='address' name='address'>
+	</div>
+	<br>
+	<div>
+		Carriers to send to (check only what you think they may have to reduce outgoing emails):
+		<div>
+			<label for='verizon'>Verizon</label>
+			<input type='checkbox' id='verizon' name='verizon'>
+		</div>
+		<div>
+			<label for='att'>AT&amp;T</label>
+			<input type='checkbox' id='att' name='att'>
+		</div>
+		<div>
+			<label for='sprint'>Sprint</label>
+			<input type='checkbox' id='sprint' name='sprint'>
+		</div>
+		<div>
+			<label for='tmobile'>T-Mobile</label>
+			<input type='checkbox' id='tmobile' name='tmobile'>
+		</div>
+		<div>
+			<label for='cricket'>Cricket</label>
+			<input type='checkbox' id='cricket' name='cricket'>
+		</div>
+	</div>
+	<br>
+	<div>
+		<label for='msg'>Message:</label>
+		<br>
+		<textarea id='msg' name='msg'></textarea>
+	</div>
+	<div class='button'>
+		<button type='submit'>Send</button>
+	</div>
+</form>
+
+</body>
+</html>
